@@ -1,10 +1,10 @@
 version = 1
-revision = 3
+revision = 5
 requires-python = ">=3.10"
 resolution-markers = [
-    "python_full_version == '3.13.*' and implementation_name == 'cpython'",
     "python_full_version >= '3.15'",
-    "(python_full_version >= '3.12' and python_full_version < '3.15' and implementation_name != 'cpython') or (python_full_version == '3.12.*' and implementation_name == 'cpython') or (python_full_version == '3.14.*' and implementation_name == 'cpython')",
+    "python_full_version == '3.13.*' and implementation_name == 'cpython'",
+    "python_full_version == '3.12.*' or python_full_version == '3.14.*' or (python_full_version == '3.13.*' and implementation_name != 'cpython')",
     "python_full_version == '3.11.*'",
     "python_full_version < '3.11'",
 ]
@@ -443,11 +443,11 @@ wheels = [
 
 [[package]]
 name = "certifi"
-version = "2024.12.14"
+version = "2026.10.18"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/0f/bd/1d41ee578ce09523c81a15426705dd20969f5abf006d1afe8aeff0dd776a/certifi-2024.12.14.tar.gz", hash = "sha256:b650d30f370c2b724812bee08008be0c4163b163ddaec3f2546c1caf65f191db", size = 166010, upload-time = "2024-12-14T13:52:38.02Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/7e/eb/a2aa1ac3ea30dd3f30ca57f40232138b6b0040719316ecb85daf61167771/certifi-2026.10.18.tar.gz", hash = "sha256:b9995d97b64d0431a5af837d8ca8cd6238104d1f319f04bd93ea43124d6c861e", size = 135227, upload-time = "2026-10-18T16:21:07.655Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/a5/32/8f6669fc4798494966bf446c8c4a162e0b5d893dff088afddf76414f70e1/certifi-2024.12.14-py3-none-any.whl", hash = "sha256:1275f7a45be9464efc1173084eaa30f866fe2e47d389406136d332ed4967ec56", size = 164927, upload-time = "2024-12-14T13:52:36.114Z" },
+    { url = "https://files.pythonhosted.org/packages/08/ba/95dd616042484f7c83a06974388b37b837732740ee70bc5dc715b5fcd55a/certifi-2026.10.18-py3-none-any.whl", hash = "sha256:73191c47aaa79da394e8fee2dbc2ec827432cab56311122c9e47abf79e390f62", size = 134093, upload-time = "2026-10-18T16:21:06.276Z" },
 ]
 
 [[package]]
@@ -2033,7 +2033,7 @@ name = "numpy"
 version = "2.3.4"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "(python_full_version >= '3.12' and python_full_version < '3.15' and implementation_name != 'cpython') or (python_full_version == '3.12.*' and implementation_name == 'cpython') or (python_full_version == '3.14.*' and implementation_name == 'cpython')",
+    "python_full_version == '3.12.*' or python_full_version == '3.14.*' or (python_full_version == '3.13.*' and implementation_name != 'cpython')",
     "python_full_version == '3.11.*'",
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/b5/f4/098d2270d52b41f1bd7db9fc288aaa0400cb48c2a3e2af6fa365d9720947/numpy-2.3.4.tar.gz", hash = "sha256:a7d018bfedb375a8d979ac758b120ba846a7fe764911a64465fd87b8729f4a6a", size = 20582187, upload-time = "2025-10-15T16:18:11.77Z" }
@@ -2794,9 +2794,9 @@ name = "pyodide-build"
 version = "0.34.4"
 source = { registry = "https://pypi.org/simple" }
 resolution-markers = [
-    "python_full_version == '3.13.*' and implementation_name == 'cpython'",
     "python_full_version >= '3.15'",
-    "(python_full_version >= '3.12' and python_full_version < '3.15' and implementation_name != 'cpython') or (python_full_version == '3.12.*' and implementation_name == 'cpython') or (python_full_version == '3.14.*' and implementation_name == 'cpython')",
+    "python_full_version == '3.13.*' and implementation_name == 'cpython'",
+    "python_full_version == '3.12.*' or python_full_version == '3.14.*' or (python_full_version == '3.13.*' and implementation_name != 'cpython')",
 ]
 dependencies = [
     { name = "auditwheel-emscripten" },
